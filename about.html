@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Sirichandana Bomma</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+            background: linear-gradient(to right, #1a1a2e, #16213e);
+            color: white;
+            text-align: center;
+        }
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px 0;
+            text-align: center;
+            z-index: 1000;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: inline-block;
+        }
+        .navbar a:hover {
+            background: #575757;
+        }
+        #home {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 50px;
+            position: relative;
+        }
+        #home h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            background: linear-gradient(to right, #f8b400, #ff6348);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        #home p {
+            font-size: 1.4em;
+            max-width: 800px;
+            margin-bottom: 30px;
+        }
+        .cta {
+            margin-top: 20px;
+        }
+        .cta a {
+            text-decoration: none;
+            background: #f8b400;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 5px;
+            margin: 10px;
+            font-size: 1.2em;
+            transition: background 0.3s ease;
+        }
+        .cta a:hover {
+            background: #ff6348;
+        }
+        .skills-carousel {
+            margin-top: 40px;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        @keyframes fade {
+            0% { opacity: 0; }
+            20% { opacity: 1; }
+            80% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+        .skill {
+            display: none;
+            animation: fade 4s infinite;
+        }
+        .skill.active {
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="articles.html">Articles</a>
+        <a href="whyme.html">Why Me</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    
+    <section id="home">
+        <h1>Transforming Data into Intelligence | Building the Future with AI & Machine Learning</h1>
+        <p>Welcome to my digital space! I’m Sirichandana Bomma, a Machine Learning Engineer with a knack for turning complex data into actionable insights. With a passion for Generative AI, NLP, and real-time analytics, I craft intelligent solutions that solve real-world problems. Let’s build the future together!</p>
+        
+        <div class="cta">
+            <a href="projects.html">Explore My Projects</a>
+            <a href="articles.html">Read My Articles</a>
+            <a href="contact.html">Connect with Me</a>
+        </div>
+        
+        <div class="skills-carousel">
+            <span class="skill active">Generative AI</span>
+            <span class="skill">LLMs</span>
+            <span class="skill">Cloud Architectures</span>
+            <span class="skill">MLOps</span>
+            <span class="skill">Real-time Analytics</span>
+        </div>
+    </section>
+    
+    <script>
+        let skills = document.querySelectorAll('.skill');
+        let index = 0;
+        setInterval(() => {
+            skills.forEach(skill => skill.classList.remove('active'));
+            skills[index].classList.add('active');
+            index = (index + 1) % skills.length;
+        }, 4000);
+    </script>
+</body>
+</html>

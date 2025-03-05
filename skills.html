@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills - Sirichandana Bomma</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+            background: #111;
+            color: white;
+        }
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #222;
+            padding: 10px 0;
+            text-align: center;
+            z-index: 1000;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: inline-block;
+        }
+        .navbar a:hover {
+            background: #575757;
+        }
+        #skills {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 50px;
+            background: #222;
+        }
+        #skills h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #f8b400;
+        }
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            max-width: 1200px;
+        }
+        .skill-box {
+            text-align: left;
+        }
+        .skill-title {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.2em;
+        }
+        .skill-bar {
+            width: 100%;
+            background: #333;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-top: 5px;
+        }
+        .skill-fill {
+            height: 15px;
+            border-radius: 5px;
+            background: #f8b400;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="articles.html">Articles</a>
+        <a href="whyme.html">Why Me</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    
+    <section id="skills">
+        <h1>Technical Skills</h1>
+        <div class="skills-container">
+            <div class="skill-box"><div class="skill-title"><i class="fas fa-brain"></i> Machine Learning</div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div></div>
+            <div class="skill-box"><div class="skill-title"><i class="fas fa-robot"></i> Artificial Intelligence</div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 80%;"></div></div></div>
+            <div class="skill-box"><div class="skill-title"><i class="fab fa-python"></i> Python</div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div></div>
+            <div class="skill-box"><div class="skill-title"><i class="fab fa-aws"></i> AWS</div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 80%;"></div></div></div>
+            <div class="skill-box"><div class="skill-title"><i class="fab fa-microsoft"></i> Azure</div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 70%;"></div></div></div>
+            <div class="skill-box"><div class="skill-title"><i class="fab fa-google"></i> GCP</div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 70%;"></div></div></div>
+            <div class="skill-box"><div class="skill-title"><i class="fas fa-database"></i> Databricks</div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 80%;"></div></div></div>
+            <div class="skill-box"><div class="skill-title"><i class="fab fa-docker"></i> Docker</div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 80%;"></div></div></div>
+            <div class="skill-box"><div class="skill-title"><i class="fab fa-kubernetes"></i> Kubernetes</div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 70%;"></div></div></div>
+            <div class="skill-box"><div class="skill-title"><i class="fas fa-cogs"></i> MLOps</div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 80%;"></div></div></div>
+            <div class="skill-box"><div class="skill-title"><i class="fas fa-magnifying-glass"></i> Retrieval-Augmented Generation (RAG)</div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 70%;"></div></div></div>
+            <div class="skill-box"><div class="skill-title"><i class="fas fa-brain"></i> Generative AI</div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 80%;"></div></div></div>
+            <div class="skill-box"><div class="skill-title"><i class="fas fa-language"></i> Large Language Models (LLMs)</div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div></div>
+            <div class="skill-box"><div class="skill-title"><i class="fas fa-comment"></i> NLP</div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 80%;"></div></div></div>
+            <div class="skill-box"><div class="skill-title"><i class="fas fa-database"></i> SQL</div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 70%;"></div></div></div>
+            <div class="skill-box"><div class="skill-title"><i class="fas fa-chart-bar"></i> Data Visualization</div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 80%;"></div></div></div>
+            <div class="skill-box"><div class="skill-title"><i class="fas fa-robot"></i> Chatbot Creation</div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 80%;"></div></div></div>
+            <div class="skill-box"><div class="skill-title"><i class="fas fa-lightbulb"></i> Prompt Engineering</div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 70%;"></div></div></div>
+        </div>
+    </section>
+</body>
+</html>

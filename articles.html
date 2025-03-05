@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles - Sirichandana Bomma</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+            background: linear-gradient(to right, #1a1a2e, #16213e);
+            color: white;
+        }
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px 0;
+            text-align: center;
+            z-index: 1000;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: inline-block;
+        }
+        .navbar a:hover {
+            background: #575757;
+        }
+        #articles {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 50px;
+        }
+        #articles h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            background: linear-gradient(to right, #f8b400, #ff6348);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        .articles-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            max-width: 1200px;
+        }
+        .article-box {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+            text-align: center;
+        }
+        .article-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #f8b400;
+        }
+        .description {
+            font-size: 1em;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        .article-link {
+            text-decoration: none;
+            color: #ff6348;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .article-link:hover {
+            color: #f8b400;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="articles.html">Articles</a>
+        <a href="whyme.html">Why Me</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    
+    <section id="articles">
+        <h1>My Articles</h1>
+        <div class="articles-container">
+            <div class="article-box">
+                <div class="article-title">Histopathologic Cancer Detection</div>
+                <div class="description">A deep learning approach using CNN to enhance cancer detection accuracy through histopathological imaging.</div>
+                <a class="article-link" href="https://medium.com/@sc.bomma/histopathologic-cancer-detection-4227fe354f8c" target="_blank">Read More</a>
+            </div>
+            <div class="article-box">
+                <div class="article-title">AI Threat and Mitigation</div>
+                <div class="description">An analysis of AI security risks and the strategies to mitigate them effectively in various applications.</div>
+                <a class="article-link" href="https://medium.com/@sc.bomma/ai-threat-and-mitigation-9b6a9242c4c6" target="_blank">Read More</a>
+            </div>
+            <div class="article-box">
+                <div class="article-title">Understanding of Crowd Sourcing Signs of Behavioral Effects</div>
+                <div class="description">A case study exploring the behavioral patterns identified through crowd-sourced data and its impact.</div>
+                <a class="article-link" href="https://www.academia.edu/68697247/Understanding_of_Crowd_Sourcing_Signs_of_Behavioral_Effects_Case_Study" target="_blank">Read More</a>
+            </div>
+            <div class="article-box">
+                <div class="article-title">Breast Cancer Prediction Using KNN-Classification</div>
+                <div class="description">Using KNN classification to predict breast cancer cases efficiently and accurately.</div>
+                <a class="article-link" href="https://www.academia.edu/127485571/Breast_Cancer_Prediction_Using_KNN_Classification" target="_blank">Read More</a>
+            </div>
+            <div class="article-box">
+                <div class="article-title">Inarticulate Communication with Android Application</div>
+                <div class="description">An innovative Android application designed to assist users with communication difficulties.</div>
+                <a class="article-link" href="https://www.academia.edu/88505119/INARTICULATE_COMMUNICATION_WITH_ANDROID_APPLICATION" target="_blank">Read More</a>
+            </div>
+            <div class="article-box">
+                <div class="article-title">More Articles</div>
+                <div class="description">Discover more of my work, including AI innovations, machine learning advancements, and research on cutting-edge technologies.</div>
+                <a class="article-link" href="https://medium.com/@sc.bomma" target="_blank">View All Articles</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
