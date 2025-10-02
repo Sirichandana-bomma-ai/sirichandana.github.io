@@ -1,57 +1,167 @@
-<section id="experience">
-    <h1>Professional Journey</h1>
-    <div class="experience-container">
-
-        <div class="experience-box">
-            <div class="company-name">Spok Inc</div>
-            <div class="role">Data Scientist</div>
-            <div class="dates">Jul 2024 – Present | McKinney, TX</div>
-            <div class="description">
-                Designed and deployed generative AI pipelines integrating LLMs (OpenAI, Hugging Face) with structured data,
-                cutting query resolution time by <strong>40%</strong>. Built pipelines in Python, PySpark, and Airflow,
-                increasing ingestion throughput by <strong>45%</strong>. Automated ETL with Python scripting, reducing manual
-                intervention by <strong>30%</strong>. Developed NLP models for clinical text, improving accuracy by <strong>25%</strong>.
-                Implemented RAG pipelines with LangChain/LangGraph, reducing workload by <strong>40%</strong>. Built dashboards with
-                PowerBI/Streamlit, enabling leadership to make decisions <strong>30%</strong> faster. Deployed HIPAA-compliant ML/GenAI
-                models on AWS SageMaker. Mentored offshore teams, accelerating onboarding by <strong>50%</strong>.
-            </div>
-        </div>
-
-        <div class="experience-box">
-            <div class="company-name">Signify Health</div>
-            <div class="role">Data Scientist</div>
-            <div class="dates">May 2023 – Jun 2024 | Dallas, TX</div>
-            <div class="description">
-                Built ML-integrated pipelines in Python/Databricks for patient risk scoring, improving accuracy by <strong>20%</strong>.
-                Automated healthcare workflows with Python scripting and Airflow, cutting reporting delays by <strong>35%</strong>.
-                Designed NLP pipelines with Hugging Face, achieving <strong>92%</strong> accuracy. Migrated workflows to Azure ML,
-                reducing deployment cycles from weeks to <strong>3 days</strong>. Applied anomaly detection in PySpark,
-                reducing false positives by <strong>35%</strong>. Delivered PowerBI dashboards, cutting review time by <strong>25%</strong>.
-            </div>
-        </div>
-
-        <div class="experience-box">
-            <div class="company-name">Zensar Technologies Limited</div>
-            <div class="role">Junior Software Engineer</div>
-            <div class="dates">Mar 2022 – Jul 2022 | Hyderabad, India</div>
-            <div class="description">
-                Developed .NET utilities to automate reporting, reducing manual workload by <strong>25%</strong>.
-                Enhanced legacy .NET applications, improving response times by <strong>20%</strong>. Collaborated with QA/support
-                teams to resolve production defects, ensuring <strong>99%</strong> uptime.
-            </div>
-        </div>
-
-        <div class="experience-box">
-            <div class="company-name">VITA Technologies</div>
-            <div class="role">Software Engineer Intern – Data Engineering & AI/ML</div>
-            <div class="dates">Aug 2021 – Feb 2022 | Warangal, India</div>
-            <div class="description">
-                Designed PoC ETL pipelines with Python/SQL, improving onboarding efficiency by <strong>25%</strong>.
-                Applied clustering/dimensionality reduction for churn analysis, generating actionable insights.
-                Built AWS Lambda serverless workflows for near real-time analytics, reducing reporting latency.
-                Developed Streamlit annotation/visualization tools, increasing labeling throughput <strong>4×</strong>.
-            </div>
-        </div>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience - Sirichandana Bomma</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+            background: linear-gradient(to right, #1a1a2e, #16213e);
+            color: white;
+        }
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px 0;
+            text-align: center;
+            z-index: 1000;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: inline-block;
+        }
+        .navbar a:hover {
+            background: #575757;
+        }
+        #experience {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 50px;
+        }
+        #experience h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            background: linear-gradient(to right, #f8b400, #ff6348);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        .experience-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            max-width: 1200px;
+        }
+        .experience-box {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .experience-box:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 20px rgba(248, 180, 0, 0.3);
+        }
+        .company-name {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #f8b400;
+        }
+        .role {
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #fff;
+        }
+        .dates {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            color: #ff6348;
+        }
+        .description {
+            font-size: 1em;
+            line-height: 1.6;
+            text-align: left;
+        }
+        .description strong {
+            color: #f8b400;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="articles.html">Articles</a>
+        <a href="whyme.html">Why Me</a>
+        <a href="contact.html">Contact</a>
     </div>
-</section>
+    
+    <section id="experience">
+        <h1>Professional Journey</h1>
+        <div class="experience-container">
+
+            <div class="experience-box">
+                <div class="company-name">Spok Inc</div>
+                <div class="role">Data Scientist</div>
+                <div class="dates">Jul 2024 – Present | McKinney, TX</div>
+                <div class="description">
+                    Designed and deployed generative AI pipelines integrating LLMs (OpenAI, Hugging Face) with structured data,
+                    cutting query resolution time by <strong>40%</strong>. Built pipelines in Python, PySpark, and Airflow,
+                    increasing ingestion throughput by <strong>45%</strong>. Automated ETL with Python scripting, reducing manual
+                    intervention by <strong>30%</strong>. Developed NLP models for clinical text, improving accuracy by <strong>25%</strong>.
+                    Implemented RAG pipelines with LangChain/LangGraph, reducing workload by <strong>40%</strong>. Built dashboards with
+                    PowerBI/Streamlit, enabling leadership to make decisions <strong>30%</strong> faster. Deployed HIPAA-compliant ML/GenAI
+                    models on AWS SageMaker. Mentored offshore teams, accelerating onboarding by <strong>50%</strong>.
+                </div>
+            </div>
+
+            <div class="experience-box">
+                <div class="company-name">Signify Health</div>
+                <div class="role">Data Scientist</div>
+                <div class="dates">May 2023 – Jun 2024 | Dallas, TX</div>
+                <div class="description">
+                    Built ML-integrated pipelines in Python/Databricks for patient risk scoring, improving accuracy by <strong>20%</strong>
+                    and reducing care gaps. Automated healthcare workflows with Python scripting and Airflow, cutting reporting delays
+                    by <strong>35%</strong>. Designed NLP pipelines with Hugging Face, achieving <strong>92%</strong> accuracy.
+                    Migrated workflows to Azure ML, reducing deployment cycles from weeks to <strong>3 days</strong>.
+                    Applied anomaly detection in PySpark, reducing false positives by <strong>35%</strong>. Delivered PowerBI dashboards,
+                    cutting review time by <strong>25%</strong>.
+                </div>
+            </div>
+
+            <div class="experience-box">
+                <div class="company-name">Zensar Technologies Limited</div>
+                <div class="role">Junior Software Engineer</div>
+                <div class="dates">Mar 2022 – Jul 2022 | Hyderabad, India</div>
+                <div class="description">
+                    Developed .NET utilities to automate reporting, reducing manual workload by <strong>25%</strong>.
+                    Enhanced legacy .NET applications, improving response times by <strong>20%</strong>.
+                    Collaborated with QA and support teams to resolve production defects, ensuring <strong>99%</strong> uptime.
+                </div>
+            </div>
+
+            <div class="experience-box">
+                <div class="company-name">VITA Technologies</div>
+                <div class="role">Software Engineer Intern – Data Engineering & AI/ML</div>
+                <div class="dates">Aug 2021 – Feb 2022 | Warangal, India</div>
+                <div class="description">
+                    Designed PoC ETL pipelines with Python/SQL, improving onboarding efficiency by <strong>25%</strong>.
+                    Applied clustering/dimensionality reduction for churn analysis, generating actionable insights.
+                    Built AWS Lambda serverless workflows for near real-time analytics, reducing reporting latency.
+                    Developed Streamlit annotation/visualization tools, increasing labeling throughput <strong>4×</strong>.
+                </div>
+            </div>
+
+        </div>
+    </section>
+</body>
+</html>
